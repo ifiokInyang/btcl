@@ -4,3 +4,8 @@ export interface ButtonProps {
 	onClick?: () => void;
 	text: string;
 }
+
+export interface ModalProps {
+  showModal: boolean;
+  setShowModal: React.Dispatch<React.SetStateAction<boolean>>;
+}
