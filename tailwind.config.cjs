@@ -20,10 +20,12 @@ module.exports = {
         }
       },
       screens: {
+        ss: '300px',
         sm: '375px',
         md: '768px',
         lg: '976px',
-        "8xl": '1440px'
+        xlg: '1024px',
+        xlg2: '1440px'
       }
     }
   },
