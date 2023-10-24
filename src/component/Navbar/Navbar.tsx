@@ -11,7 +11,7 @@ const Navbar = () => {
 		setShowModal(true);
 	};
 	return (
-    <div className="">
+    <div className="z-20">
       <nav className="bg-white xlg:pr-4 dark:bg-gray-900 w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
         <div className="flex flex-wrap items-center justify-between">
           <Link to={'/'} className="flex flex-1 items-start">
@@ -55,13 +55,13 @@ const Navbar = () => {
 					> */}
           <ul className="md:flex flex-col ss:hidden p-4 md:p-0 mt-4 font-medium md:flex-row sm:space-x-4 lg:space-x-8 md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             {/* <li> */}
-              <Link
-                to={'/'}
-                className="block py-2 pl-3 pr-4 lg:text-xl sm:text-base sm:text-base rounded md:bg-transparent md:hover:text-[#f9c151] md:text-[black] hover:-translate-x-1 ease-in-out md:p-0 md:dark:text-blue-500"
-                aria-current="page"
-              >
-                Home
-              </Link>
+            <Link
+              to={'/'}
+              className="block py-2 pl-3 pr-4 lg:text-xl sm:text-base sm:text-base rounded md:bg-transparent md:hover:text-[#f9c151] md:text-[black] hover:-translate-x-1 ease-in-out md:p-0 md:dark:text-blue-500"
+              aria-current="page"
+            >
+              Home
+            </Link>
             {/* </li> */}
 
             <button
@@ -98,28 +98,28 @@ const Navbar = () => {
                 aria-labelledby="dropdownHoverButton"
               >
                 {/* <li> */}
-                  <Link
-                    to={'/about'}
-                    className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                  >
-                    Mission
-                  </Link>{' '}
+                <Link
+                  to={'/about'}
+                  className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >
+                  Mission
+                </Link>{' '}
                 {/* </li> */}
                 {/* <li> */}
-                  <Link
-                    to={'/about'}
-                    className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                  >
-                    Vision
-                  </Link>{' '}
+                <Link
+                  to={'/about'}
+                  className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >
+                  Vision
+                </Link>{' '}
                 {/* </li> */}
                 {/* <li> */}
-                  <Link
-                    to={'/about'}
-                    className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                  >
-                    Who we are
-                  </Link>{' '}
+                <Link
+                  to={'/about'}
+                  className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >
+                  Who we are
+                </Link>{' '}
                 {/* </li> */}
               </ul>
             </div>
