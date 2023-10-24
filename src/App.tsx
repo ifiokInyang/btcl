@@ -6,6 +6,7 @@ import Announcement from "./component/Announcement/Announcement";
 import About from "./pages/About/About";
 import Footer from "./pages/Footer/Footer";
 
+
 function AppRoutes() {
 	const { pathname } = useLocation();
 
@@ -20,6 +21,7 @@ function AppRoutes() {
 			<Routes>
 				<Route path="/" element={<Home />} />
 				<Route path="/about" element={<About />} />
+				
 			</Routes>
 			<Footer />
 		</React.Fragment>
