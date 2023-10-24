@@ -18,7 +18,7 @@ const Navbar = () => {
             <img
               src={logo}
               className="xlg2:mr-[400px] xlg:mr-[200px] lg:mr-0 md:mr-0"
-              alt="Mitaka Logo"
+              alt="bensmartech Logo"
               width="100px"
             />
             {/* <span className="self-center lg:text-xl sm:text-base font-semibold whitespace-nowrap dark:text-white"></span> */}
@@ -54,7 +54,7 @@ const Navbar = () => {
 						id="navbar-sticky"
 					> */}
           <ul className="md:flex flex-col ss:hidden p-4 md:p-0 mt-4 font-medium md:flex-row sm:space-x-4 lg:space-x-8 md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-            <li>
+            {/* <li> */}
               <Link
                 to={'/'}
                 className="block py-2 pl-3 pr-4 lg:text-xl sm:text-base sm:text-base rounded md:bg-transparent md:hover:text-[#f9c151] md:text-[black] hover:-translate-x-1 ease-in-out md:p-0 md:dark:text-blue-500"
@@ -62,7 +62,7 @@ const Navbar = () => {
               >
                 Home
               </Link>
-            </li>
+            {/* </li> */}
 
             <button
               id="dropdownHoverButton"
@@ -97,30 +97,30 @@ const Navbar = () => {
                 className="py-2 text-sm text-gray-700 dark:text-gray-200"
                 aria-labelledby="dropdownHoverButton"
               >
-                <li>
+                {/* <li> */}
                   <Link
                     to={'/about'}
                     className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                   >
                     Mission
                   </Link>{' '}
-                </li>
-                <li>
+                {/* </li> */}
+                {/* <li> */}
                   <Link
                     to={'/about'}
                     className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                   >
                     Vision
                   </Link>{' '}
-                </li>
-                <li>
+                {/* </li> */}
+                {/* <li> */}
                   <Link
                     to={'/about'}
                     className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                   >
                     Who we are
                   </Link>{' '}
-                </li>
+                {/* </li> */}
               </ul>
             </div>
 
