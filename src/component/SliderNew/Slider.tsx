@@ -50,46 +50,46 @@ function SliderNew() {
 	};
 
 	useEffect(() => {
-		const interval = setInterval(nextSlide, 5000); // 10 seconds
+		const interval = setInterval(nextSlide, 5000);
 		return () => clearInterval(interval);
 	}, [currentIndex]);
 
 	return (
-    <div className="md:h-[1080px] ss:h-[700px] w-full m-auto relative group z-1">
-      <div
-        style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-        className="w-full h-full bg-center bg-cover duration-500"
-      >
-        <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/50 flex flex-col items-start justify-center">
-          <p className="text-white md:text-[40px] ss:text-[20px] font-bold md:pl-[8rem] ss:pl-[0.5rem] md:mb-[4rem] ss:mb-[0.5rem]">
-            {slides[currentIndex].caption}
-          </p>
-          <p className="text-white w-[50%] md:text-[25px] ss:text-[10px] font-bold md:pl-[8rem] ss:pl-[0.5rem]">
-            {slides[currentIndex].desc}
-          </p>
-        </div>
-      </div>
-      {/* Left Arrow */}
-      <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
-        <BsChevronCompactLeft onClick={prevSlide} size={30} />
-      </div>
-      {/* Right Arrow */}
-      <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
-        <BsChevronCompactRight onClick={nextSlide} size={30} />
-      </div>
-      <div className="flex top-4 justify-center py-2">
-        {slides.map((slide, slideIndex) => (
-          <div
-            key={slideIndex}
-            onClick={() => goToSlide(slideIndex)}
-            className="text-2xl cursor-pointer"
-          >
-            <RxDotFilled />
-          </div>
-        ))}
-      </div>
-    </div>
-  );
+		<div className="md:h-[1080px] ss:h-[700px] w-full m-auto relative group z-1">
+			<div
+				style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
+				className="w-full h-full bg-center bg-cover duration-500"
+			>
+				<div className="absolute top-0 left-0 right-0 bottom-0 bg-black/50 flex flex-col items-start justify-center">
+					<p className="text-white md:text-[40px] ss:text-[20px] font-bold md:pl-[8rem] ss:pl-[0.5rem] md:mb-[4rem] ss:mb-[0.5rem]">
+						{slides[currentIndex].caption}
+					</p>
+					<p className="text-white w-[50%] md:text-[25px] ss:text-[10px] font-bold md:pl-[8rem] ss:pl-[0.5rem]">
+						{slides[currentIndex].desc}
+					</p>
+				</div>
+			</div>
+			{/* Left Arrow */}
+			<div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+				<BsChevronCompactLeft onClick={prevSlide} size={30} />
+			</div>
+			{/* Right Arrow */}
+			<div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+				<BsChevronCompactRight onClick={nextSlide} size={30} />
+			</div>
+			<div className="flex top-4 justify-center py-2">
+				{slides.map((slide, slideIndex) => (
+					<div
+						key={slideIndex}
+						onClick={() => goToSlide(slideIndex)}
+						className="text-2xl cursor-pointer"
+					>
+						<RxDotFilled />
+					</div>
+				))}
+			</div>
+		</div>
+	);
 }
 
 export default SliderNew;
