@@ -64,7 +64,7 @@ function SliderNew() {
 					<p className="text-white md:text-[40px] ss:text-[20px] font-bold md:pl-[8rem] ss:pl-[0.5rem] md:mb-[4rem] ss:mb-[0.5rem]">
 						{slides[currentIndex].caption}
 					</p>
-					<p className="text-white w-[50%] md:text-[25px] ss:text-[10px] font-bold md:pl-[8rem] ss:pl-[0.5rem]">
+					<p className="text-white w-[70%] tracking-wide md:text-[25px] ss:text-[15px] font-bold md:pl-[8rem] ss:pl-[0.5rem]">
 						{slides[currentIndex].desc}
 					</p>
 				</div>

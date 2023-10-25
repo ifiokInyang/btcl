@@ -34,11 +34,20 @@ const Footer = () => {
 								Find Us
 							</h2>
 							<ul className="text-gray-500 dark:text-gray-400 font-medium">
+								<li>Office Address</li>
 								<li className="mb-4 text-black">
 									#15 Saint Andrew’s Street, Rumuobiakani, Port Harcourt, Rivers
 									State, Nigeria
 								</li>
-								<li className="mb-4 text-black">+234 807 031 6182</li>
+								<li>Operation Yard</li>
+
+								<li className="mb-4 text-black">
+									4 Omubo close, Omubo Estate, R/D Road, Rumuodara, Port
+									Harcourt, Rivers State, Nigeria
+								</li>
+								<li className="mb-4 text-black">
+									+2348033365111 <br /> +2347057424183
+								</li>
 								<li className="mb-4 md:text-lg ss:text-[12px] text-black">
 									info@bensmartech.com
 								</li>
