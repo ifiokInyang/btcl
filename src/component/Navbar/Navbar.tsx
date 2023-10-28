@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import logo from "../../assets/bensmartLogo.jpeg";
 import Modal from "../Modal/Modal";
 
@@ -7,8 +7,23 @@ const Navbar = () => {
 	const location = useLocation();
 	const [showModal, setShowModal] = React.useState(false);
 
+	const navigate = useNavigate();
+
 	const handleOpen = () => {
 		setShowModal(true);
+	};
+
+	const missionClick = () => {
+		console.log("mission is being clicked");
+		localStorage.setItem("mission", "mission");
+		navigate("/about");
+	};
+
+	const visionClick = () => {
+		console.log("vision is being clicked");
+
+		localStorage.setItem("vision", "vision");
+		navigate("/about");
 	};
 	return (
     <div className="z-20">
@@ -102,24 +117,24 @@ const Navbar = () => {
                   to={'/about'}
                   className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                 >
-                  Mission
-                </Link>{' '}
-                {/* </li> */}
-                {/* <li> */}
-                <Link
-                  to={'/about'}
-                  className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                >
-                  Vision
-                </Link>{' '}
-                {/* </li> */}
-                {/* <li> */}
-                <Link
-                  to={'/about'}
-                  className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                >
                   Who we are
                 </Link>{' '}
+                {/* </li> */}
+                {/* <li> */}
+                <li
+                  className="cursor:pointer block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  onClick={missionClick}
+                >
+                  Mission
+                </li>{' '}
+                {/* </li> */}
+                {/* <li> */}
+                <li
+                  className="cursor:pointer block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  onClick={visionClick}
+                >
+                  Vision{' '}
+                </li>{' '}
                 {/* </li> */}
               </ul>
             </div>

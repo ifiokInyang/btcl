@@ -9,7 +9,7 @@ const Intro = () => {
         <p className="font-bold md:text-[35px] ss:text-[20px] break-normal">
           Securing assets, promoting wealth and sustainability
         </p>
-        <p className="md:text-[25px] ss:text-[15px] my-8 font-medium tracking-wider">
+        <p className="md:text-[22px] ss:text-[15px] my-8 font-medium tracking-wider">
           At the forefront of industry transformation, we specialize in
           providing world-class remote surveillance service for offshore/onshore
           assets and environmental sustainability. We envision a future where
