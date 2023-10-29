@@ -49,13 +49,6 @@ export default function Modal({ showModal, setShowModal }: ModalProps) {
 										</h3>
 									</Link>
 								</div>
-								<div className="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t hover:bg-[#b09f7f]">
-									<Link to={"/cert"} onClick={() => setShowModal(false)}>
-										<h3 className="text-xl font-medium text-white hover:text-black">
-											Certifications
-										</h3>
-									</Link>
-								</div>
 								<div className="flex items-start justify-between p-5 rounded-t hover:bg-[#b09f7f]">
 									<Link to={"/contact"} onClick={() => setShowModal(false)}>
 										<h3 className="text-xl font-medium text-white hover:text-black">
