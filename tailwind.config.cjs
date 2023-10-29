@@ -1,6 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 
-
 module.exports = {
   content: [
     './src/**/*.{js,jsx,ts,tsx}',
@@ -23,6 +22,15 @@ module.exports = {
         lg: '976px',
         xlg: '1024px',
         xlg2: '1440px'
+      },
+      animation: {
+        slide: 'slide 30s linear infinite'
+      },
+      keyframes: {
+        slide: {
+          '0%': { transform: 'translateX(100%)' }, // Adjust the distance based on your needs
+          '100%': { transform: 'translateX(-100%)' } // Adjust the distance based on your needs
+        }
       }
     }
   },

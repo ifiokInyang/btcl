@@ -3,6 +3,7 @@ import Intro from "../../component/CompanyIntro/Intro";
 import Solutions from "../../component/Solutions/Solutions";
 import Partners from "../../component/Partners/Partners";
 import SliderNew from "../../component/SliderNew/Slider";
+import ContinuousSlider from "../../component/Certifications/Certifications";
 
 const Home = () => {
 
@@ -12,6 +13,7 @@ const Home = () => {
 			<Intro />
 			<Solutions />
 			<Partners />
+			<ContinuousSlider />
 		</>
 	);
 };
