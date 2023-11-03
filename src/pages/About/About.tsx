@@ -26,7 +26,7 @@ const About = () => {
     <>
       <img
         src={aboutImg}
-        alt="about image-mitaka"
+        alt="about image-bensmartech"
         className="md:h-[500px] w-full object-cover"
       />
       <div className="flex flex-wrap ss:my-[4rem] px-4 w-full">

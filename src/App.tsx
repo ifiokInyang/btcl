@@ -6,6 +6,7 @@ import Announcement from "./component/Announcement/Announcement";
 import About from "./pages/About/AboutSub";
 import Footer from "./pages/Footer/Footer";
 import Contact from "./pages/Contact/Contact";
+import Services from "./pages/Services/Services";
 
 
 function AppRoutes() {
@@ -23,6 +24,7 @@ function AppRoutes() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/services" element={<Services />} />
       </Routes>
       <Footer />
     </React.Fragment>
