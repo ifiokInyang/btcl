@@ -5,7 +5,6 @@ import erosion from "../../assets/erosion4.jpg";
 import pipeline from "../../assets/pipeline3.webp";
 import manPower from "../../assets/manpower1.png";
 
-
 const Solutions = () => {
 	const navigate = useNavigate();
 
@@ -29,7 +28,7 @@ const Solutions = () => {
 								Well head Protection System
 							</h5>
 						</a>
-						<p className="mb-3 font-medium text-gray-700 dark:text-gray-400">
+						<p className="mb-3 font-medium text-gray-700 dark:text-gray-400 text-justify">
 							Elevate the security of your wellhead infrastructure with our
 							cutting-edge surveillance system. Our solution provides advanced
 							monitoring and control to ensure the safety and integrity of your
@@ -52,7 +51,7 @@ const Solutions = () => {
 								Pipeline Protection System
 							</h5>
 						</a>
-						<p className="mb-3 font-medium text-gray-700 dark:text-gray-400">
+						<p className="mb-3 font-medium text-gray-700 dark:text-gray-400 text-justify">
 							Ensure the safety and reliability of your pipeline network with
 							our state-of-the-art security and surveillance system. We employ
 							advanced technology for continuous monitoring, helping to
@@ -77,7 +76,7 @@ const Solutions = () => {
 								Flood and Erosion Control System
 							</h5>
 						</a>
-						<p className="mb-3 font-medium text-gray-700 dark:text-gray-400">
+						<p className="mb-3 font-medium text-gray-700 dark:text-gray-400 text-justify">
 							Shield communities and critical infrastructure from the
 							devastating effects of floods and erosion with our comprehensive
 							control system. Our solutions, including flood barriers and
@@ -100,10 +99,10 @@ const Solutions = () => {
 								Manpower Supply
 							</h5>
 						</a>
-						<p className="mb-3 font-medium text-gray-700 dark:text-gray-400">
+						<p className="mb-3 font-medium text-gray-700 dark:text-gray-400 text-justify">
 							Access a skilled and adaptable workforce through our manpower
-							supply services. We deliver proficient personnel across various
-							industries to meet your operational demands and enhance
+							supply services. We deliver proficient personnel in the Oil and
+							Gas industry to meet your operational demands and enhance
 							productivity.
 						</p>
 					</div>
