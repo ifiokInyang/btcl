@@ -5,7 +5,6 @@ import erosion from "../../assets/erosion4.jpg";
 import pipeline from "../../assets/pipeline3.webp";
 import manPower from "../../assets/manpower1.png";
 
-
 const Solutions = () => {
 	const navigate = useNavigate();
 
@@ -102,8 +101,8 @@ const Solutions = () => {
 						</a>
 						<p className="mb-3 font-medium text-gray-700 dark:text-gray-400 text-justify">
 							Access a skilled and adaptable workforce through our manpower
-							supply services. We deliver proficient personnel across various
-							industries to meet your operational demands and enhance
+							supply services. We deliver proficient personnel in the Oil and
+							Gas industry to meet your operational demands and enhance
 							productivity.
 						</p>
 					</div>

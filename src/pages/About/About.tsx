@@ -18,8 +18,7 @@ const About = () => {
 		} else if (retrieveVision === "vision") {
 			visionSection?.scrollIntoView({ behavior: "smooth" });
 		}
-		// localStorage.removeItem("vision");
-		// localStorage.removeItem("mission");
+		
 	}, []);
 
 	return (
