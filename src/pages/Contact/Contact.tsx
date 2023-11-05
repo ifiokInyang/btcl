@@ -1,12 +1,19 @@
-import React from 'react';
-import contactImg from '../../assets/contact-us.jpeg';
-import { HiBuildingOffice } from 'react-icons/hi2';
-import { BiPhoneCall } from 'react-icons/bi';
-import { MdEmail } from 'react-icons/md';
-import { Link } from 'react-router-dom';
+import React, { useState } from "react";
+import contactImg from "../../assets/contact-us.jpeg";
+import { HiBuildingOffice } from "react-icons/hi2";
+import { BiPhoneCall } from "react-icons/bi";
+import { MdEmail } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const Contact = () => {
-  return (
+	const [mapLoaded, setMapLoaded] = useState(false);
+
+	// Function to handle the onLoad event of the iframe
+  const handleMapLoad = () => {
+    console.log("i have loaded")
+		setMapLoaded(true);
+	};
+	return (
     <div className="">
       <img src={contactImg} alt="contact us image" />
       <div className="flex justify-center items-center flex-wrap py-8 w-full h-auto">
@@ -140,7 +147,9 @@ const Contact = () => {
             loading="lazy"
             className="ss:w-[300px] sm:w-[370] md:w-[600px]"
             referrerPolicy="no-referrer-when-downgrade"
+            onLoad={handleMapLoad} // This triggers when the map is loaded
           />
+          {mapLoaded ? null : <div className="loader">Loading...</div>}
         </div>
       </div>
     </div>

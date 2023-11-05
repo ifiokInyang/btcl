@@ -1,12 +1,10 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import wellHead from "../../assets/wellhead2.jpeg";
 import erosion from "../../assets/erosion4.jpg";
 import pipeline from "../../assets/pipeline3.webp";
 import manPower from "../../assets/manpower1.png";
 
 const Solutions = () => {
-	const navigate = useNavigate();
 
 	return (
 		<div className="px-8 bg-[#f3f2f5] pb-8">
