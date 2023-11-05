@@ -7,7 +7,7 @@ import About from "./pages/About/AboutSub";
 import Footer from "./pages/Footer/Footer";
 import Contact from "./pages/Contact/Contact";
 import Services from "./pages/Services/Services";
-
+import Projects from "./pages/Projects/Projects";
 
 function AppRoutes() {
 	const { pathname } = useLocation();
@@ -17,18 +17,19 @@ function AppRoutes() {
 	}, [pathname]);
 
 	return (
-    <React.Fragment>
-      <Announcement />
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/services" element={<Services />} />
-      </Routes>
-      <Footer />
-    </React.Fragment>
-  );
+		<React.Fragment>
+			<Announcement />
+			<Navbar />
+			<Routes>
+				<Route path="/" element={<Home />} />
+				<Route path="/about" element={<About />} />
+				<Route path="/contact" element={<Contact />} />
+				<Route path="/services" element={<Services />} />
+				<Route path="/projects" element={<Projects />} />
+			</Routes>
+			<Footer />
+		</React.Fragment>
+	);
 }
 
 function App() {

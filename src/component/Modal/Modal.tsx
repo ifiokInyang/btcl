@@ -1,8 +1,18 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { ModalProps } from "../../utils/interfaces";
 
 export default function Modal({ showModal, setShowModal }: ModalProps) {
+	const navigate = useNavigate();
+
+	const servicesFunc = () => {
+		localStorage.removeItem("man");
+		localStorage.removeItem("pipeline");
+		localStorage.removeItem("flood");
+		setShowModal(false);
+		navigate("/services");
+	};
+
 	return (
 		<>
 			{showModal ? (
@@ -36,7 +46,7 @@ export default function Modal({ showModal, setShowModal }: ModalProps) {
 									</Link>
 								</div>
 								<div className="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t hover:bg-[#b09f7f]">
-									<Link to={"/services"} onClick={() => setShowModal(false)}>
+									<Link to={"/services"} onClick={servicesFunc}>
 										<h3 className="text-xl font-medium text-white hover:text-black">
 											Services
 										</h3>

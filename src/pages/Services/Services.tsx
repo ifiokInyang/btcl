@@ -1,8 +1,7 @@
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
 import services from "../../assets/services.jpg";
 import ids from "../../assets/idsMain.jpeg";
-import idsOne from "../../assets/ids1.jpeg";
+import idsOne from "../../assets/pipeImg.png";
 import floodImg from "../../assets/f&e_nobg.png";
 import sokuProject from "../../assets/sokuProject.png";
 
@@ -38,9 +37,9 @@ const Services = () => {
 					Services
 				</div>
 			</div>
-			<div className="flex flex-wrap ss:my-[4rem] px-4 ss:pl-4 xlg:pl-[76px] w-full">
+			<div className="flex flex-wrap px-4 ss:pl-4 xlg:pl-[76px] w-full">
 				<div className="md:w-[50%] ss:w-full mr-0">
-					<p className="font-bold md:text-[35px] ss:text-[20px] break-normal">
+					<p className="font-bold md:text-[35px] pt-8 ss:text-[20px] break-normal">
 						Wellhead Protection System
 					</p>
 					<p className="md:text-[20px] ss:text-[15px] my-8 font-normal text-justify">
@@ -55,7 +54,7 @@ const Services = () => {
 						assets and maintain the reliability of your energy production.
 					</p>
 				</div>
-				<div className="flex justify-center mt-4 md:w-[50%] ss:w-full">
+				<div className="flex justify-center md:w-[50%] ss:w-full">
 					<img
 						src={ids}
 						className="h-[500px] md:max-w-md ss:max-w-ss rounded-lg object-contain"
@@ -65,10 +64,10 @@ const Services = () => {
 				</div>
 			</div>{" "}
 			<div
-				className="flex flex-wrap ss:my-[4rem] ss:pr-4 xlg:pr-[76px] px-4 w-full"
+				className="flex flex-wrap ss:pr-4 xlg:pr-[76px] px-4 w-full"
 				id="pipeline"
 			>
-				<div className="flex justify-center mt-4 md:w-[50%] ss:w-full">
+				<div className="flex justify-center md:w-[50%] ss:w-full">
 					<img
 						src={idsOne}
 						className="h-[500px] md:max-w-md ss:max-w-ss rounded-lg object-contain"
@@ -95,7 +94,7 @@ const Services = () => {
 				</div>
 			</div>{" "}
 			<div
-				className="flex flex-wrap ss:my-[4rem] ss:pl-4 xlg:pl-[76px] px-4 w-full"
+				className="flex flex-wrap ss:pl-4 xlg:pl-[76px] px-4 w-full"
 				id="flood"
 			>
 				<div className="md:w-[50%] ss:w-full mr-0">
@@ -126,10 +125,10 @@ const Services = () => {
 				</div>
 			</div>{" "}
 			<div
-				className="flex flex-wrap ss:my-[4rem] ss:pr-4 xlg:pr-[76px] px-4 w-full"
+				className="flex flex-wrap ss:pr-4 xlg:pr-[76px] px-4 w-full"
 				id="man"
 			>
-				<div className="flex justify-center mt-4 md:w-[50%] ss:w-full">
+				<div className="flex justify-center md:w-[50%] ss:w-full">
 					<img
 						src={sokuProject}
 						className="h-[500px] md:max-w-md ss:max-w-ss rounded-lg object-contain"
