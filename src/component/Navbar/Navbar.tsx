@@ -37,8 +37,8 @@ const Navbar = () => {
 		navigate("/about");
 	};
 
-  const missionClick = () => {
-    localStorage.setItem("mission", "mission");
+	const missionClick = () => {
+		localStorage.setItem("mission", "mission");
 		navigate("/about");
 	};
 
@@ -50,13 +50,26 @@ const Navbar = () => {
 		<div className="z-20">
 			<nav className="bg-white xlg:pr-4 dark:bg-gray-900 w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
 				<div className="flex flex-wrap items-center justify-between">
-					<Link to={"/"} className="flex flex-1 items-start">
+					<Link
+						to={"/"}
+						className="flex flex-1 items-start flex-col ss:h-[110px] md:h-auto"
+					>
 						<img
 							src={logo}
-							className="xlg2:mr-[400px] xlg:mr-[200px] lg:mr-0 md:mr-0"
+							className="xlg2:mr-[400px] xlg:mr-[200px] lg:mr-0 md:mr-0 ss:mt-[8px] md:mt-0 ss:w-[50px] md:w-[100px] ss:h-[50px] md:h-[100px]"
 							alt="bensmartech Logo"
 							width="100px"
 						/>
+						<p className="md:ml-[12px] ss:ml-[6px]">
+							<span className="text-[#33008b] md:text-[20px] ss:text-[15px] font-medium">
+								B.Ensmart
+							</span>{" "}
+						</p>
+						<p className="md:ml-[12px] ss:ml-[6px]">
+							<span className="text-[#ff2c2c] md:text-[20px] ss:text-[15px] font-medium">
+								Technical Company Ltd.
+							</span>
+						</p>
 						{/* <span className="self-center lg:text-xl sm:text-base font-semibold whitespace-nowrap dark:text-white"></span> */}
 					</Link>
 					<div className="flex md:order-2">
