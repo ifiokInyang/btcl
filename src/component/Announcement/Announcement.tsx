@@ -21,7 +21,7 @@ const Announcement = () => {
 				</div>
 				<div className="flex align-center md:ml-8 ss:ml-0 ss:font-medium lg:font-bold items-center">
 					<BsFillClockFill color="white" />
-					<p className="ml-2 text-white">Office hours: 8:00am - 5:00pm</p>
+					<p className="ml-2 text-white">Office hours: 0800hrs - 1700hrs</p>
 				</div>
 			</div>
 		</div>

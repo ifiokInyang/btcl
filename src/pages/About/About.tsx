@@ -1,27 +1,36 @@
-import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
-import aboutImg from "../../assets/about-us.png";
-import rig from "../../assets/rig1.jpeg";
-import { TbTargetArrow } from "react-icons/tb";
-import { IoTelescopeSharp } from "react-icons/io5";
+import React, { useEffect, useState } from 'react';
+import aboutImg from '../../assets/about-us.png';
+import rig from '../../assets/rig1.jpeg';
+import { TbTargetArrow } from 'react-icons/tb';
+import { IoTelescopeSharp } from 'react-icons/io5';
 
 const About = () => {
-	useEffect(() => {
-		const visionSection = document.getElementById("vision");
-		const missionSection = document.getElementById("mission");
+  const [showHSEPolicy, setShowHSEPolicy] = useState(false);
+  const [showContentPolicy, setShowContentPolicy] = useState(false);
 
-		const retrieveVision = localStorage.getItem("vision");
-		const retrieveMission = localStorage.getItem("mission");
+  useEffect(() => {
+    const visionSection = document.getElementById('vision');
+    const missionSection = document.getElementById('mission');
 
-		if (retrieveMission === "mission") {
-			missionSection?.scrollIntoView({ behavior: "smooth" });
-		} else if (retrieveVision === "vision") {
-			visionSection?.scrollIntoView({ behavior: "smooth" });
-		}
-		
-	}, []);
+    const retrieveVision = localStorage.getItem('vision');
+    const retrieveMission = localStorage.getItem('mission');
 
-	return (
+    if (retrieveMission === 'mission') {
+      missionSection?.scrollIntoView({ behavior: 'smooth' });
+    } else if (retrieveVision === 'vision') {
+      visionSection?.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, []);
+
+  const toggleShowHSEPolicy = () => {
+    setShowHSEPolicy(!showHSEPolicy);
+  };
+
+  const toggleShowContentPolicy = () => {
+    setShowContentPolicy(!showContentPolicy);
+  };
+
+  return (
     <>
       <img
         src={aboutImg}
@@ -54,7 +63,6 @@ const About = () => {
           <img
             src={rig}
             className="h-auto md:max-w-md ss:max-w-ss rounded-lg"
-            // width={"200px"}
             alt="three pipelines in a forest area"
           />
         </div>
@@ -66,7 +74,7 @@ const About = () => {
         >
           <p className="text-[24px] font-medium">Why we are the best...</p>
 
-          <p className="text-[30px]">Bensmartech Vision &amp; Mission</p>
+          <p className="text-[30px]">B.Ensmartech's Vision &amp; Mission</p>
         </div>
         <div className="lg:w-[50vw] ss:w-full space-y-16">
           <div id="mission" className="ss:mt-8 md:mt-0">
@@ -86,6 +94,113 @@ const About = () => {
               industrial assets/facilities.
             </p>
           </div>
+        </div>
+      </div>
+      <div className="flex flex-wrap">
+        <div className="lg:flex-1 px-8">
+          <p className="font-bold md:text-[35px] ss:text-[20px] my-8 break-normal">
+            HSE Policy
+          </p>
+          <section className="text-justify text-[18px]">
+            <p>
+              <strong>BTCL</strong> is committed to providing a safe and healthy
+              workplace for all our employees, contractors/Sub-Contractors.
+            </p>
+            <p>
+              <strong>BTCL</strong> believes that all injuries are preventable
+              and excellence in health and safety is the key to our long term
+              success. We are committed to compliance with any governmental
+              agencies, regulations, and industry best practices and will use
+              audits to measure and improve our health and safety programs.
+            </p>
+            {showHSEPolicy ? (
+              <p>
+                <strong>BTCL</strong> will hold all levels of management
+                accountable for providing a safe work environment and enforcing
+                safe work procedures and practices. <strong>BTCL</strong> will
+                ensure that personnel(s) have the necessary knowledge to work
+                safely.
+              </p>
+            ) : null}
+            {showHSEPolicy ? (
+              <p>
+                <strong>BTCL</strong> will hold all employees and contractors
+                accountable for following safe work procedures and reporting
+                unsafe acts and safety incidents. We will ensure timely
+                follow-up to safety incidents. Workers have general
+                responsibilities for their own health and safety and they have
+                the responsibility to refuse unsafe work. Discriminatory action
+                will not be taken against them for refusing to do unsafe work.
+              </p>
+            ) : null}
+            <button onClick={toggleShowHSEPolicy} className="text-blue-500">
+              {showHSEPolicy ? 'See Less' : 'See More'}
+            </button>
+          </section>
+        </div>
+        <div className="lg:flex-1 px-8">
+          <p className="font-bold md:text-[35px] ss:text-[20px] my-8 break-normal text-center">
+            Nigerian Content Development Policy
+          </p>
+          <section className="text-justify text-[18px] pb-4">
+            <p>
+              It is the policy of{' '}
+              <strong>B.ENSMART TECHNICAL COMPANY LTD</strong> to carry out the
+              execution of any project in such a way as to comply with the
+              Federal Government LAW (NOGICD Act) of{' '}
+              <strong>B.ENSMART TECHNICAL COMPANY LTD</strong> undertakes to
+              comply by insuring that optimal amount of works is carried out in
+              Nigeria and good considerations are given to the following, among
+              others:
+              {showContentPolicy ? (
+                <li>
+                  Quality and quantity of committed infrastructure in Nigeria.
+                </li>
+              ) : null}
+              {showContentPolicy ? (
+                <li>
+                  Location of Project management Team and Procurement centre in
+                  Nigeria; (section @, NOGICD Act).
+                </li>
+              ) : null}
+              {showContentPolicy ? (
+                <li>
+                  Direct Nigerian employment (Skilled, unskilled, managerial and
+                  directorship); in order to comply with section 28 of NOGICD
+                  Act,
+                </li>
+              ) : null}
+              {showContentPolicy ? (
+                <li>
+                  Giving First Consideration to services, raw materials and
+                  finished goods that are of Nigerian origin; this is in
+                  conformity or compliance with section 12 of NOGICD Act.{' '}
+                </li>
+              ) : null}
+              {showContentPolicy ? (
+                <li> Nigerian equipment and other resources;</li>
+              ) : null}
+              {showContentPolicy ? (
+                <li>
+                  Training, technology acquisition, development programs and
+                  other opportunities for Nigerians; this is in conformity with
+                  section 29 of NOGICD Act.{' '}
+                </li>
+              ) : null}
+              {showContentPolicy ? (
+                <li>
+                  Substantial Nigeria participation and First consideration in
+                  the procurement of Nigerian manufactured goods.{' '}
+                </li>
+              ) : null}
+              <button
+                onClick={toggleShowContentPolicy}
+                className="text-blue-500"
+              >
+                {showContentPolicy ? 'See Less' : 'See More'}
+              </button>
+            </p>
+          </section>
         </div>
       </div>
     </>
