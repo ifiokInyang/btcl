@@ -22,7 +22,7 @@ export default function Modal({ showModal, setShowModal }: ModalProps) {
               {/* content */}
               <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-[#33008b] outline-none focus:outline-none">
                 {/* header */}
-                <div className="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t hover:bg-[#ff2c2c]">
+                <div className="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t hover:bg-[#5614c7]">
                   <Link to={'/'} onClick={() => setShowModal(false)}>
                     <h3 className="text-xl font-medium text-white">Home</h3>
                   </Link>
@@ -36,28 +36,28 @@ export default function Modal({ showModal, setShowModal }: ModalProps) {
                     </span>
                   </button>
                 </div>
-                <div className="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t hover:bg-[#ff2c2c]">
+                <div className="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t hover:bg-[#5614c7]">
                   <Link to={'/about'} onClick={() => setShowModal(false)}>
                     <h3 className="text-xl font-medium text-white hover:text-black">
                       About
                     </h3>
                   </Link>
                 </div>
-                <div className="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t hover:bg-[#ff2c2c]">
+                <div className="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t hover:bg-[#5614c7]">
                   <Link to={'/services'} onClick={servicesFunc}>
                     <h3 className="text-xl font-medium text-white hover:text-black">
                       Services
                     </h3>
                   </Link>
                 </div>
-                <div className="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t hover:bg-[#ff2c2c]">
+                <div className="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t hover:bg-[#5614c7]">
                   <Link to={'/projects'} onClick={() => setShowModal(false)}>
                     <h3 className="text-xl font-medium text-white hover:text-black">
                       Projects
                     </h3>
                   </Link>
                 </div>
-                <div className="flex items-start justify-between p-5 rounded-t hover:bg-[#ff2c2c]">
+                <div className="flex items-start justify-between p-5 rounded-t hover:bg-[#5614c7]">
                   <Link to={'/contact'} onClick={() => setShowModal(false)}>
                     <h3 className="text-xl font-medium text-white hover:text-black">
                       Contact
