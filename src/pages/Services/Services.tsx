@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import services from "../../assets/services.jpg";
 import ids from "../../assets/idsMain.jpeg";
 import idsOne from "../../assets/pipeImg.png";
-import floodImg from "../../assets/f&e_nobg.png";
+import floodImg from "../../assets/f&e-merge.png";
 import sokuProject from "../../assets/sokuProject.png";
 
 const Services = () => {
