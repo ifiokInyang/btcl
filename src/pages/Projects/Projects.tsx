@@ -99,21 +99,6 @@ const Projects = () => {
 						<a href="#">
 							<img
 								className="rounded-t-lg w-full object-cover md:h-[205px] ss:h-[190px]"
-								src={placeHolder}
-								alt="well head"
-							/>
-						</a>
-						<div className="p-5">
-							<p className="mb-3 font-medium text-gray-700 dark:text-gray-400 text-justify">
-								Installation of asset monitoring device for wellhead protection
-								at <strong> Ogbotogbo, Bayelsa, Nigeria.</strong>
-							</p>
-						</div>
-					</div>
-					<div className="max-w-[280px] ss:mb-8 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-						<a href="#">
-							<img
-								className="rounded-t-lg w-full object-cover md:h-[205px] ss:h-[190px]"
 								src={idsImg4}
 								alt="well head"
 							/>
