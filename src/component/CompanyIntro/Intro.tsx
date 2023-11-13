@@ -9,7 +9,7 @@ const Intro = () => {
         <p className="font-bold md:text-[35px] ss:text-[20px] break-normal">
           Securing assets, promoting wealth and sustainability
         </p>
-        <p className="md:text-[22px] ss:text-[15px] my-8 font-medium text-justify">
+        <p className="md:text-[18px] lg:text-[22px] ss:text-[15px] md:w-[350px] lg:w-auto my-8 font-medium text-justify">
           At the forefront of industry transformation, we specialize in
           providing world-class remote surveillance service for offshore/onshore
           assets and environmental sustainability. We envision a future where
@@ -45,7 +45,7 @@ const Intro = () => {
       <div className="flex justify-center mt-4 md:w-[50%] ss:w-full">
         <img
           src={introImg}
-          className="h-auto md:max-w-md ss:max-w-ss rounded-lg"
+          className="h-auto md:max-w-md md:w-[350px] lg:w-auto ss:max-w-ss rounded-lg"
           // width={"200px"}
           alt="three pipelines in a forest area"
         />

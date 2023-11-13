@@ -70,16 +70,15 @@ const Services = () => {
 				<div className="flex justify-center md:w-[50%] ss:w-full">
 					<img
 						src={idsOne}
-						className="h-[500px] md:max-w-md ss:max-w-ss rounded-lg object-contain"
-						// width={"600px"}
+						className="h-[500px] md:w-[350px] lg:w-auto md:max-w-md ss:max-w-ss rounded-lg object-contain"
 						alt="a well secured ids-enabled facility"
 					/>
 				</div>
 				<div className="md:w-[50%] ss:w-full mr-0">
-					<p className="font-bold md:text-[35px] ss:text-[20px] break-normal">
+					<p className="font-bold md:text-[35px] ss:text-[20px] md:w-[350px] lg:w-auto break-normal">
 						Pipeline Protection System
 					</p>
-					<p className="md:text-[20px] ss:text-[15px] my-8 font-normal text-justify">
+					<p className="md:text-[20px] ss:text-[15px] md:w-[350px] lg:w-auto my-8 font-normal text-justify">
 						Ensure the safety and reliability of your pipeline network with our
 						state-of-the-art Pipeline Protection System. We employ advanced
 						technology for continuous monitoring, helping to safeguard against
@@ -98,10 +97,10 @@ const Services = () => {
 				id="flood"
 			>
 				<div className="md:w-[50%] ss:w-full mr-0">
-					<p className="font-bold md:text-[35px] ss:text-[20px] break-normal">
+					<p className="font-bold md:text-[35px] md:w-[350px] lg:w-auto ss:text-[20px] break-normal">
 						Flood and Erosion Control System
 					</p>
-					<p className="md:text-[20px] ss:text-[15px] my-8 font-normal text-justify">
+					<p className="md:text-[20px] ss:text-[15px] my-8 md:w-[350px] lg:w-auto font-normal text-justify">
 						Shield communities and critical infrastructure from the devastating
 						effects of floods and erosion with our comprehensive Flood and
 						Erosion Control System. Our solutions, including flood barriers and
@@ -118,7 +117,7 @@ const Services = () => {
 				<div className="flex justify-center mt-4 md:w-[50%] ss:w-full">
 					<img
 						src={floodImg}
-						className="h-auto md:max-w-md ss:max-w-ss rounded-lg"
+						className="h-auto md:max-w-md md:w-[350px] lg:w-auto ss:max-w-ss rounded-lg object-cover"
 						// width={"200px"}
 						alt="image of a flood and erosion control machinery"
 					/>
@@ -131,16 +130,16 @@ const Services = () => {
 				<div className="flex justify-center md:w-[50%] ss:w-full">
 					<img
 						src={sokuProject}
-						className="h-[500px] md:max-w-md ss:max-w-ss rounded-lg object-contain"
+						className="h-[500px] md:max-w-md ss:max-w-ss md:w-[350px] lg:w-auto rounded-lg object-contain"
 						// width={"200px"}
 						alt="men installing ids on a platform"
 					/>
 				</div>
 				<div className="md:w-[50%] ss:w-full mr-0">
-					<p className="font-bold md:text-[35px] ss:text-[20px] break-normal">
+					<p className="font-bold md:text-[35px] ss:text-[20px] md:w-[350px] lg:w-auto break-normal">
 						Manpower Supply
 					</p>
-					<p className="md:text-[20px] ss:text-[15px] my-8 font-normal text-justify">
+					<p className="md:text-[20px] ss:text-[15px] my-8 font-normal md:w-[350px] lg:w-auto text-justify">
 						Access a skilled and adaptable workforce through our Manpower Supply
 						services. We deliver proficient personnel in the Oil and Gas
 						industry to meet your operational demands and enhance productivity.
