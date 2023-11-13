@@ -42,7 +42,7 @@ const About = () => {
           <p className="font-bold md:text-[35px] ss:text-[24px] break-normal">
             Who we are
           </p>
-          <p className="md:text-[20px] ss:text-[18px] my-8 font-normal">
+          <p className="md:text-[20px] ss:text-[18px] my-8 md:w-[350px] lg:w-auto font-normal">
             Bensmartech Limited is a leading innovator and provider of
             cutting-edge protection and surveillance solutions, specializing in
             safeguarding critical infrastructure in the Oil and Gas Industry.
@@ -62,7 +62,7 @@ const About = () => {
         <div className="flex justify-center mt-4 md:w-[50%] ss:w-full">
           <img
             src={rig}
-            className="h-auto md:max-w-md ss:max-w-ss rounded-lg"
+            className="h-auto md:max-w-md ss:max-w-ss md:w-[350px] lg:w-auto rounded-lg"
             alt="three pipelines in a forest area"
           />
         </div>
