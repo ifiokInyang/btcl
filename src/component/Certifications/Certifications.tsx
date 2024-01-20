@@ -1,16 +1,20 @@
-import React from "react";
+import React, { useRef } from "react";
 import dpr from "../../assets/dpr.png";
 import ncdmb from "../../assets/ncdmb.png";
 import nipex from "../../assets/nipex2.png";
 import nogic from "../../assets/nogic2.png";
 import nsitf from "../../assets/nsitf-fotor.png";
+import "./certstyle.css";
 
 const ContinuousSlider = () => {
-	const logos = [nsitf, nipex, dpr, ncdmb, nogic];
+	const certificationsRef = useRef(null);
 
 	return (
 		<>
-			<h5 className="sm:pt-4 ss:pt-10 text-4xl mb-8 font-bold text-center tracking-tight text-gray-900 dark:text-white">
+			<h5
+				ref={certificationsRef}
+				className="sm:pt-4 ss:pt-10 text-4xl mb-8 font-bold text-center tracking-tight text-gray-900 dark:text-white"
+			>
 				Certifications and Licenses{" "}
 			</h5>
 			<h1 className="text-center lg:text-[24px] font-medium">
@@ -20,15 +24,38 @@ const ContinuousSlider = () => {
 			<h1 className="text-center lg:text-[24px] font-medium mb-8">
 				We are fully registered with relevant professional bodies
 			</h1>
-			<div className="flex align-center justify-between w-full overflow-hidden h-[400px]">
-				<div className="inline-block whitespace-nowrap animate-slide space-x-[140px]">
-					{logos.map((logo, index) => (
-						<div key={index} className="logo inline-block">
-							<img src={logo} alt="..." width={"450px"} />
-						</div>
-					))}
+			<div className="logos">
+				<div className="logos-slide">
+					<img
+						src={nsitf}
+						alt="nigeria social insurance trust fund logo"
+						className="w-[400px] object-contain"
+					/>
+					<img
+						src={ncdmb}
+						alt="nigerian content development and monitoring board logo"
+						className="w-[400px] object-contain"
+					/>
+
+					<img
+						src={nogic}
+						alt="nigerian oil and gas industry content joint qualification system logo"
+						className="w-[400px] object-contain"
+					/>
+					<img
+						src={nipex}
+						alt="nigerian petroleum exchange logo"
+						className="w-[400px] object-contain"
+					/>
+
+					<img
+						src={dpr}
+						alt="department of petroleum resources logo"
+						className="w-[400px] object-contain"
+					/>
 				</div>
 			</div>
+			;
 		</>
 	);
 };

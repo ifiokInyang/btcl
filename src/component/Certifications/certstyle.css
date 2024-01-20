@@ -1,0 +1,39 @@
+.logos-slide img{
+    margin-right: 40px;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+   to {
+        transform: translateX(calc(-190px * 4));
+    }
+}
+
+.logos{
+    overflow: hidden;
+    padding: 0px 0;
+    white-space: nowrap;
+
+}
+.logos-slide{
+    display: inline-flex;
+    animation: slide 15s infinite linear;
+}
+
+@media (max-width: 320px) {
+    @keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(calc(-250px * 6));
+    }
+}
+.logos-slide{
+    display: inline-flex;
+    animation: slide 15s infinite linear;
+}
+
+}
