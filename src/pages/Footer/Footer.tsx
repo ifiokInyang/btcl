@@ -102,7 +102,7 @@ const Footer = () => {
 
 					<div className="px-4 py-6 dark:bg-gray-700 md:flex md:items-center md:justify-between">
 						<span className="text-sm text-black dark:text-gray-300 sm:text-center">
-							© 2023 <Link to={"/"}>Ben Smartech™</Link>. All Rights Reserved.
+							© {new Date().getFullYear()} <Link to={"/"}>Ben Smartech™</Link>. All Rights Reserved.
 						</span>
 						<div className="flex mt-4 space-x-6 sm:justify-center md:mt-0">
 							<Link
