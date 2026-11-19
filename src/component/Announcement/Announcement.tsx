@@ -10,8 +10,6 @@ const Announcement = () => {
 					{" "}
 					<BsFillTelephoneFill color="white" />
 					<div className="md:flex">
-						<p className="ml-2 text-white">+234 803 336 5111</p>
-
 						<p className="ml-2 text-white">+234 705 742 4183</p>
 					</div>
 				</div>
