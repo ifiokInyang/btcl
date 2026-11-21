@@ -46,7 +46,7 @@ const Footer = () => {
 									Harcourt, Rivers State, Nigeria
 								</li>
 								<li className="mb-4 text-black">
-									+2348033365111 <br /> +2347057424183
+									<br /> +2347057424183
 								</li>
 								<li className="mb-4 md:text-lg ss:text-[12px] text-black">
 									info@bensmartech.com
